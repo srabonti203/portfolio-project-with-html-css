@@ -6,6 +6,11 @@ body,
 html {
   overflow-x: hidden;
 }
+.container {
+  background-color: rgb(224, 248, 248);
+  margin: 3% 8%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 /* navbar start */
 ul {
@@ -25,11 +30,6 @@ ul li:hover {
   transform: scale(1.2);
   background-color: white;
   color: rgb(14, 14, 113);
-}
-.container {
-  background-color: rgb(224, 248, 248);
-  margin: 3% 8%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .home {
   height: 63vh;
@@ -107,6 +107,8 @@ ul li:hover {
   color: rgb(14, 14, 113);
 }
 .pic img {
+  height: 75%;
+  width: 30%;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
@@ -114,13 +116,63 @@ ul li:hover {
   right: 15%;
 }
 /* intro end */
-
-/* for extra large devices */
-/* @media (min-width: 1400px) {
+/* medium devices */
+@media (min-width: 768px) {
   .pic img {
-    height: 55%;
-    width: 25%;
+    height: 43%;
+    width: 30%;
+  }
+  .pic img {
+    top: 31%;
+    right: 4%;
+  }
+  .intro {
+    width: 63%;
+    left: 3%;
+  }
+  .intro1 {
+    font-size: 250%;
+  }
+}
+/* large devices */
+@media (min-width: 992px) {
+  .pic img {
+    height: 54%;
+    width: 30%;
+  }
+  .pic img {
+    top: 27%;
+    right: 4%;
+  }
+  .intro {
+    left: 5%;
+  }
+}
+/* ertra large devices */
+@media (min-width: 1200px) {
+  .pic img {
+    height: 61%;
+    width: 30%;
+  }
+  .pic img {
+    top: 25%;
+    right: 7%;
+  }
+  .intro {
+    left: 9%;
+  }
+}
+/* Extra extra large devices */
+@media (min-width: 1400px) {
+  .pic img {
+    height: 64%;
+    width: 26%;
+  }
+  .pic img {
     top: 22%;
     right: 11%;
   }
-} */
+  .intro {
+    top: 31%;
+  }
+}
