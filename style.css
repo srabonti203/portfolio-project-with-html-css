@@ -143,7 +143,7 @@ ul li:hover {
   padding-left: 9%;
 }
 .about-pic img {
-  width: 178%;
+  width: 143%;
   border-radius: 6px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -152,11 +152,12 @@ ul li:hover {
   font-weight: bold;
   color: rgb(14, 14, 113);
   position: absolute;
-  left: 20%;
-  bottom: 4%;
+  left: 15%;
+  bottom: 8%;
 }
 .part2 {
-  width: 52%;
+  width: 40%;
+  padding-right: 6%;
 }
 .part21 .pera1 {
   margin-bottom: 4%;
@@ -194,6 +195,9 @@ ul li:hover {
     height: 46vh;
   }
   /* home section end */
+  /* about section start */
+
+  /* about section end */
 }
 /* large devices */
 @media (min-width: 992px) {
@@ -209,9 +213,22 @@ ul li:hover {
   .home {
     height: 45vh;
   }
+  /* about section start */
+  .part21 .pera1,
+  .part21 .pera2,
+  .part22 {
+    font-size: 100%;
+  }
+  .about-pic img {
+    width: 105%;
+  }
+  .part1 {
+    padding-left: 9%;
+  }
 }
 /* ertra large devices */
 @media (min-width: 1200px) {
+  /* home section start */
   .pic img {
     height: 68%;
     width: 24%;
@@ -225,8 +242,13 @@ ul li:hover {
     height: 47vh;
   }
 }
+/* about section start */
+.about-pic img {
+  width: 122%;
+}
 /* Extra extra large devices */
 @media (min-width: 1400px) {
+  /* home section start */
   .pic img {
     height: 75%;
     width: 23%;
@@ -239,4 +261,5 @@ ul li:hover {
   .home {
     height: 49vh;
   }
+  /* about section start */
 }
